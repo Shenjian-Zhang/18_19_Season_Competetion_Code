@@ -71,12 +71,12 @@ void start_task(void *pvParameters)
                 (UBaseType_t)INS_TASK_PRIO,
                 (TaskHandle_t *)&INSTask_Handler);
 								
-    xTaskCreate((TaskFunction_t)GIMBALTest_task,
-                (const char *)"GIMBALTest_task",
-                (uint16_t)GIMBALTest_STK_SIZE,
-                (void *)NULL,
-                (UBaseType_t)GIMBALTest_TASK_PRIO,
-                (TaskHandle_t *)&GIMBALTestTask_Handler);
+//    xTaskCreate((TaskFunction_t)GIMBALTest_task,
+//                (const char *)"GIMBALTest_task",
+//                (uint16_t)GIMBALTest_STK_SIZE,
+//                (void *)NULL,
+//                (UBaseType_t)GIMBALTest_TASK_PRIO,
+//                (TaskHandle_t *)&GIMBALTestTask_Handler);
 
     xTaskCreate((TaskFunction_t)GIMBAL_task,
                 (const char *)"GIMBAL_task",
